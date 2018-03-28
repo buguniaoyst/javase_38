@@ -500,41 +500,40 @@ boolean占一个字节。
 
 ```java
 public class VariableDemo {
-	public static void main(String[] args) {
-		//定义byte类型的变量
-		byte b = 10;
-		System.out.println(b);
-		
-		//定义short类型的变量
-		short s = 100;
-		System.out.println(s);
-		
-		//定义int类型的变量
-		int i = 10000;
-		System.out.println(i);
-		
-		//定义long类型的变量
-		long l = 1000000000000000L;
-		System.out.println(l);
-		
-		//定义float类型的变量
-		float f = 12.34F;
-		System.out.println(f);
-		
-		//定义double类型的变量
-		double d = 12.34;
-		System.out.println(d);
-		
-		//定义char类型的变量
-		char c = 'a';
-		System.out.println(c);
-		
-		//定义boolean类型的变量
-		boolean bb = false;
-		System.out.println(bb);
-	}
-}
+    public static void main(String[] args) {
+        //定义byte类型的变量
+        byte b = 10;
+        System.out.println(b);
 
+        //定义short类型的变量
+        short s = 100;
+        System.out.println(s);
+
+        //定义int类型的变量
+        int i = 10000;
+        System.out.println(i);
+
+        //定义long类型的变量
+        long l = 1000000000000000L;
+        System.out.println(l);
+
+        //定义float类型的变量
+        float f = 12.34F;
+        System.out.println(f);
+
+        //定义double类型的变量
+        double d = 12.34;
+        System.out.println(d);
+
+        //定义char类型的变量
+        char c = 'a';
+        System.out.println(c);
+
+        //定义boolean类型的变量
+        boolean bb = false;
+        System.out.println(bb);
+    }
+}
 ```
 
 注意：
@@ -543,7 +542,7 @@ public class VariableDemo {
 
 2）在java中随便书写一个小数，默认是double类型，比如：3.14就是double类型；
 
-6.5    数据类型转换\(掌握\)
+#### 2.6.5    数据类型转换\(掌握\)
 
 在java中，不同的数据需要保存在不同的空间中，而开辟空间的时候，需要通过不同的类型关键字来定义当前这个空间是什么类型的空间。
 
@@ -557,7 +556,7 @@ public class VariableDemo {
 
 2）强制类型转换
 
-6.5.1    隐式数据类型转换
+##### 1    隐式数据类型转换
 
 隐式类型转换：在程序中，空间保存的数据类型不一致的时候，java内部会自动的帮助我们转换。
 
@@ -569,75 +568,42 @@ byte 空间中的数据， 可以自动的转成 short int long float double
 
 但是不能把double 保存在 byte 、int 、 short 、long 等空间。
 
-6.5.2    案例代码
+##### 2    案例代码
 
-/\*
-
-```
-+:是一个运算符，做加法运算的。
-
-我们在做运算的时候，一般要求参与运算的数据类型必须一致。
-
-
-
-类型转换：
-
-    隐式转换
-
-    强制转换
-
-
-
-隐式转换    
-
-    byte,short,char -- int -- long -- float -- double
-```
-
-\*/
-
+```java
+/*
+	+:是一个运算符，做加法运算的。
+	我们在做运算的时候，一般要求参与运算的数据类型必须一致。
+	
+	类型转换：
+		隐式转换
+		强制转换
+		
+	隐式转换	
+		byte,short,char -- int -- long -- float -- double
+*/
 public class TypeCastDemo {
+	public static void main(String[] args) {
+		//定义两个int类型的变量
+		int a = 3;
+		int b = 4;
+		int c = a + b;
+		System.out.println(c);
+		
+		//定义一个byte类型,定义一个int类型
+		byte bb = 2;
+		int cc = 5;
+		System.out.println(bb + cc);
+		
+		//我能不能不直接输出，用一个变量接收呢?
+		//用变量接收，这个变量应该有类型
+		//可能损失精度
+		//byte dd = bb + cc;
+		int dd = bb + cc;
+		System.out.println(dd);
+	}
 
 ```
-public static void main\(String\[\] args\) {
-
-    //定义两个int类型的变量
-
-    int a = 3;
-
-    int b = 4;
-
-    int c = a + b;
-
-    System.out.println\(c\);
-
-
-
-    //定义一个byte类型,定义一个int类型
-
-    byte bb = 2;
-
-    int cc = 5;
-
-    System.out.println\(bb + cc\);
-
-
-
-    //我能不能不直接输出，用一个变量接收呢?
-
-    //用变量接收，这个变量应该有类型
-
-    //可能损失精度
-
-    //byte dd = bb + cc;
-
-    int dd = bb + cc;
-
-    System.out.println\(dd\);
-
-}
-```
-
-}
 
 转换规律：
 
