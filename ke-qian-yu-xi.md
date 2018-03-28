@@ -150,83 +150,19 @@ Java开发的所有程序都可以在任何的操作系统上运行，主要是�
 
 测试：打开dos窗口进入JDK安装目录中的bin目录，输入java，javac命令，如果能正常显示jdk中的信息则说明安装成功。
 
-
-
 ### 2.3、书写HelloWorld
 
 #### 2.3.1 编写程序
 
-使用
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+使用EditPlus创建你一个Hello.java文件，然后在这个文件中书写以下代码：
+
+```java
+public class Hello {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+```
 
 
 
