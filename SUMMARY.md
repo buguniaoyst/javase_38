@@ -4,7 +4,7 @@
 * [day01-搭建环境、数据类型](day01da-jian-huan-jing-3001-shu-ju-lei-xing.md)
   * [学习方法篇](xue-xi-fang-fa-pian.md)
   * [课前预习](ke-qian-yu-xi.md)
-  * 课后复习，练习，总结
+  * [课后复习，练习，总结](ke-hou-fu-xi-ff0c-lian-xi-ff0c-zong-jie.md)
 * day02-Eclipse、运算符、键盘录入
 * day03-选择、循环语句
 * day04-Random、数组
