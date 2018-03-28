@@ -6,7 +6,7 @@
   * [课前预习](ke-qian-yu-xi.md)
   * [课后复习，练习，总结](ke-hou-fu-xi-ff0c-lian-xi-ff0c-zong-jie.md)
     * [课后复习](ke-hou-fu-xi-ff0c-lian-xi-ff0c-zong-jie/ke-hou-fu-xi.md)
-    * 课后练习
+    * [课后练习](ke-hou-fu-xi-ff0c-lian-xi-ff0c-zong-jie/ke-hou-lian-xi.md)
     * 课后总结
 * day02-Eclipse、运算符、键盘录入
 * day03-选择、循环语句
