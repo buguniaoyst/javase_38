@@ -226,13 +226,11 @@ public static void main(String[] args) {
 
 #### 2.1.  训练描述
 
-```
 看代码分析问题
-```
 
 #### 2.2． 操作步骤描述
 
-```
+```java
     byte b1=3,b2=4,b;
 
     b=b1+b2;
