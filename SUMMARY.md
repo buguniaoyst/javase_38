@@ -5,7 +5,7 @@
   * [学习方法篇](xue-xi-fang-fa-pian.md)
   * [课前预习](ke-qian-yu-xi.md)
   * [课后复习，练习，总结](ke-hou-fu-xi-ff0c-lian-xi-ff0c-zong-jie.md)
-    * 课后复习
+    * [课后复习](ke-hou-fu-xi-ff0c-lian-xi-ff0c-zong-jie/ke-hou-fu-xi.md)
     * 课后练习
     * 课后总结
 * day02-Eclipse、运算符、键盘录入
@@ -18,6 +18,4 @@
 * day09-对象数组、ArrayList、学生管理系统
 * day10-字符流、字符缓冲流
 * day11-学生管理系统案例IO流版本
-
-
 
