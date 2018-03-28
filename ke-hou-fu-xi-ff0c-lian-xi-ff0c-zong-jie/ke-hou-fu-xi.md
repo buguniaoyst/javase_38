@@ -40,55 +40,19 @@ Java语言的三种架构是哪三种呢？
 
 #### 2.2.3、Java开发环境搭建【掌握】
 
-在搭建环境之前我们首先要了解两个概念：JRE和JDK。
+【思考】
 
-* 1 JRE
+1、JRE的作用是什么？
 
-  ```
-  Jre的全英文名是：Java Runtime Environment   Java运行环境。
-  ```
-
-* 2 JDK
-
-  ```
-  Jdk(Java Development Kit):java开发工具包。
-
-  jdk提供给Java开发人员使用的。我们使用jdk开发的程序要交给jre去运行。
-  ```
-
-* 3 JDK的下载
-
-  ```
-    官方网址：www.oracle.com 。去官网下载jdk。
-  ```
-
-* 4 JDK的安装与测试
-
-安装：正常安装，注意安装目录中不要有中文或者空格。
-
-测试：打开dos窗口进入JDK安装目录中的bin目录，输入java，javac命令，如果能正常显示jdk中的信息则说明安装成功。
+2、JDK的作用是什么？
 
 ### 2.3、书写HelloWorld
 
-#### 2.3.1 编写程序
-
-使用EditPlus创建你一个Hello.java文件，然后在这个文件中书写以下代码：
+【实操题】
 
 ```java
-public class Hello {
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
-}
+
 ```
-
-#### 2.3.2编译Hello.java文件
-
-通过javac Hello.java将Hello.java文件编译成Hello.class文件。
-
-#### 2.3.2 运行程序
-
-通过命令java Hello命令直接运行Hello.class文件。
 
 ### 2.5、Java中的关键字，标识符，符号和注释
 
