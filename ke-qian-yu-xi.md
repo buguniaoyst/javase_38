@@ -126,15 +126,22 @@ Java开发的所有程序都可以在任何的操作系统上运行，主要是�
 
 * 1 JRE
 
-      Jre的全英文名是：Java Runtime Environment   Java运行环境。
+  ```
+  Jre的全英文名是：Java Runtime Environment   Java运行环境。
+  ```
 
 * 2 JDK
 
-      Jdk\(Java Development Kit\):java开发工具包。
+  ```
+  Jdk(Java Development Kit):java开发工具包。
 
-      jdk提供给Java开发人员使用的。我们使用jdk开发的程序要交给jre去运行。
+  jdk提供给Java开发人员使用的。我们使用jdk开发的程序要交给jre去运行。
+  ```
 
 * 3 JDK的下载
+
+        官方网址：www.oracle.com 。去官网下载jdk。
+
 * * 4 JDK的安装与测试
 
 
