@@ -112,38 +112,137 @@ public class Hello {
 
 通过命令java Hello命令直接运行Hello.class文件。
 
-### 2.4、环境变量
-
-* 1.为什么要配置？
-
-  希望在任何的目录下都可以去运行我们安装的JDK中bin目录下的程序。
-
-  程序的编译和执行需要使用到javac和java命令，所以只能在bin目录下写程序
-
-  实际开发中，不可能把程序写到bin目录下，所以我们必须让javac和java命令在任意目录下能够访问。
-
-* 2.怎么配置？
-
-  1、创建新的变量名称：JAVA\_HOME
-
-  计算机-右键属性-高级系统设置-高级-环境变量-系统变量
-
-  2、为JAVA\_HOME添加变量值：JDK安装目录 即 E:\Java\jdk1.7.0\_51  
-  （这个路径以你自己的jdk安装目录为准）
-
-  3、在path环境变量最前面添加如下内容：
-
-  %JAVA\_HOME%\bin;
-
 ### 2.5、Java中的关键字，标识符，符号和注释
 
 #### 2.5.1 关键字
 
-HelloWorld里面写的东西，比如说蓝字部分，class ，public，static。这些都属于关键字。不同的关键字，在Java代码中有不同的使用场景。
-
 关键字：在Java语言中被赋予了特定含义的一些单词或者字母的组合。
 
-如**class**：它在Java中是用来定义（创建）Java中的一个程序的开始。
+Java中常用的关键字：
+
+```java
+1、访问修饰符的关键字（3个）
+
+     public （公有的）：可跨包
+
+     protected (受保护的)：当前包内可用
+
+     private (私有的)：当前类可用
+
+2、定义类、接口、抽象类和实现接口、继承类的关键字、实例化对象（6个）
+
+     class (类)：public class A(){}花括号里是已实现的方法体，类名需要与文件名相同
+
+     interface (接口)：public interface B(){}花括号里有方法体，但没有实现，方法体句子后面是英文分号;结尾
+
+     abstract (声明抽象)：public abstract class C(){}介于类与接口中间，可以有，也可以没有已经实现的方法体
+
+     implemenst (实现)：用于类或接口，实现接口public class A interface B(){}
+
+     extends (继承)：用于类继承类public class A extends D(){}
+
+     new (创建新对象)：A a=new A();A表示一个类
+
+3、包的关键字（2个）
+
+     import (引入包的关键字)：当使用某个包的一些类时，仅需要类名，然后使用ctrl+shift+o或者选定类名（类或属性或方法）
+     按住ctrl+单击，即可自动插入类所在的包
+
+     package (定义包的关键字)：将所有相关的类放在一个包类以便查找修改等
+
+4、数据类型的关键字（12个）
+
+     byte (字节型)：8bit
+
+     char (字节型)：16bit
+
+     boolean (布尔型)：--
+
+     short (短整型)：16bit
+
+     int (整型)：32bit
+
+     float (浮点型)：32bit
+
+     long (长整型)：64bit
+
+     double (双精度)：64bit
+
+     void (无返回)：public void A(){}其他需要反回的经常与return连用
+
+     null (空值)
+
+     true (真)
+
+     false (假）
+
+5、条件循环（流程控制）（12个）
+
+     if (如果) ：if（条件语句｛执行代码｝如果条件语句成立，就开始执行｛｝里面的内容
+
+     else (否则，或者) ：常与if连用，用法相同：if(...){...}else{...}
+
+     while (当什么时候)：while（条件语句）｛执行代码｝
+
+     for（满足三个条件时）：for(初始化循环变量；判断条件；循环变量值｛｝
+
+    switch (选择结构)：switch(表达式）｛case 常量表达式1：语句1；...case 常量表达式2；语句2；default:语句；｝
+    efault就是如果没有匹配的case就执行它，default并不是必须的。case后的语句可以不用大括号。
+
+    case (匹配switch的表达式里的结果) ：同上
+
+    default (默认)： default就是如果没有匹配的case就执行它， default并不是必须的
+
+    do (运行) ：通长与while连用
+
+    break (跳出循环)：直接跳出循环，执行循环体后的代码
+
+    continue (继续) ： 中断本次循环，并开始下一轮循环
+
+    return (返回) ：return 一个返回值类型
+
+    instanceof(实例)：一个二元操作符，和==、>、<是同一类的。测试它左边的对象是否是它右边的类的实例，返回boolean类型的数据
+
+6、修饰方法、类、属性和变量（9个）
+
+    static(静态的)：属性和方法都可以用static修饰，直接使用类名、属性和方法名。只有内部类可以使用static关键字修饰，
+    调用直接使用类名、内部类类名进行调用。static可以独立存在
+
+    final(最终的不可被改变)：方法和类都可用final来修饰；final修饰的类是不能被继承的；final修饰的方法是不能被子类重写。
+    常量的定义：final修饰的属性就是常量
+
+    super(调用父类的方法)：常见public void paint(Graphics g){super.paint(g);...}
+
+    this(当前类的父类的对象)：调用当前类中的方法（表示调用这个方法的对象）this.addActionListener(al):等等
+
+    native(本地)
+
+    strictfp(严格，精准)
+
+    synchronized(线程，同步)：一个时间内只能有一个线程得到执行。另一个线程必须等待当前线程执行完这个代码块以后才能执行该代码块
+
+    transient(短暂)
+
+    volatile(易失)
+
+7、错误处理（5个）
+
+    catch(处理异常)：（1）try+catch 程序流程是：运行到try块中，如果有异常抛出，则转到catch块去处理。然后执行catch块后面的语句
+
+                                 （2）try+catch+finally 程序流程是：运行到try块中，如果有异常抛出，则转到catch垮，
+                                 catch块执行完毕后， 执行finally块的代码，再执行finally块后面的代码。如果没有异常抛出，
+                                 执行完try块，也要去执行finally块的代码。然后执行finally块后 面的语句
+
+                                 （3）try+finally  程序流程是：运行到try块中，如果有异常抛出，则转到finally块的代码。
+
+   try(捕获异常)
+
+  finally（有没有异常都执行）
+
+  throw(抛出一个异常对象)：一些可以导致程序出问题，比如书写错误，逻辑错误或者是api的应用错误等等。为力防止程序的崩溃就要预
+  先检测这些因素，所以java使用了异常这个机制在java中异常是靠“抛出”  也就是英语的“throw”来使用的，意思是如果发现到什么异常的时
+  候就把错误信息“抛出” throws(声明一个异常可能被抛出)：把异常交给他的上级管理，自己不进行异常处理
+```
 
 #### 2.5.2 标识符
 
