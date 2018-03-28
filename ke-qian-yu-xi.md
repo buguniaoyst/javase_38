@@ -120,5 +120,22 @@ Java语言对于开发方向又提供了三种技术方式，也就是三种架�
 
 Java开发的所有程序都可以在任何的操作系统上运行，主要是因为在不同的操作系统上装上了不同的软件（Java虚拟机）。Jvm（Java Virtual Machine）
 
+#### 2.2.4、Java开发环境搭建【掌握】
+
+在搭建环境之前我们首先要了解两个概念：JRE和JDK。
+
+* 1 JRE
+
+      Jre的全英文名是：Java Runtime Environment   Java运行环境。
+
+* 2 JDK
+
+      Jdk\(Java Development Kit\):java开发工具包。
+
+      jdk提供给Java开发人员使用的。我们使用jdk开发的程序要交给jre去运行。
+
+* 3 JDK的下载
+* * 4 JDK的安装与测试
+
 
 
